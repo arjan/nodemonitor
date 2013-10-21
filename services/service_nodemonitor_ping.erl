@@ -32,6 +32,7 @@ process_get(_ReqData, Context0) ->
                           {ip, Ip},
                           {app, App},
                           {last_seen, calendar:local_time()}], Context),
+            mod_signal:emit({node_update, []}, Context),
             {struct, [{ok, "Thanks."}]}
     end.
 

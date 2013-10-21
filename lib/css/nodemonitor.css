@@ -1,7 +1,12 @@
 body {
     margin: auto;
-    width: 960px;
+    max-width: 960px;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+#container {
+    margin: 20px;
     position: relative;
 }
 
@@ -11,11 +16,16 @@ body {
     right: 0;
     top: 0;
 }
+
 #header h1 {
     font-size: 70px;
     letter-spacing: -0.08em;
     color: #eee;
 }
+@media(max-width: 500px) {
+#header h1 {
+    font-size: 40px;
+}}
 
 table.data {
     width: 100%;
@@ -54,3 +64,10 @@ table.data td.actions a:hover {
 }
 #eee tr.status-warn td { background-color: #eee; color: orange; }
 #eee tr.status-error td { background-color: red; }
+
+p.meta {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}

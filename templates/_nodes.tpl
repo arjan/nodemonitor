@@ -31,3 +31,4 @@
 
     </tbody>
 </table>
+<p class="meta">Last updated {{ now|date:"H:i:s" }}</p>
