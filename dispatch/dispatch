@@ -1,5 +1,6 @@
 %% -*- mode: erlang -*-
 %% Put your dispatch rules here.
 [
-{ping,    ["ping"], controller_api, [{module, "nodemonitor"}, {method, "ping"}]}
+ {home,    [], controller_template, [{template, "home.tpl"}]},
+ {ping,    ["ping"], controller_api, [{module, "nodemonitor"}, {method, "ping"}]}
 ].
