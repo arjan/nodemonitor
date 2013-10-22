@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Node monitor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {% lib "css/reset.css" "css/nodemonitor.css" %}
     </head>
     <body>
