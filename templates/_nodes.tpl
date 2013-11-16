@@ -12,7 +12,7 @@
         {% for id in m.search[{query cat=`node` sort=`-modified`}] %}
             <tr>
                 <td>
-                    {{ id.last_seen|date:"H:i" }}
+                    {{ id.last_seen|date:"Y-m-d H:i" }}
                 </td>
                 <td>
                     {{ id.title }}
