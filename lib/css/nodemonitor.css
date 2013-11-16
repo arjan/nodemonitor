@@ -62,8 +62,6 @@ table.data td.actions a:hover {
 #eee td.location {
     cursor: pointer;
 }
-#eee tr.status-warn td { background-color: #eee; color: orange; }
-#eee tr.status-error td { background-color: red; }
 
 p.meta {
     margin-top: 20px;
@@ -71,3 +69,23 @@ p.meta {
     color: #666;
     text-align: right;
 }
+
+tr td span.icon {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 3px 5px 2px 0;
+    background: #3f3;
+}
+
+tr.medium td span.icon {
+    background: #fc0;
+}
+
+tr.old td span.icon {
+    background: #f33;
+}
+
+    
+tr.medium td { color: #999; }
+tr.old td { color: #ccc; }
