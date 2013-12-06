@@ -2,5 +2,6 @@
 %% Put your dispatch rules here.
 [
  {home,    [], controller_template, [{template, "home.tpl"}]},
- {ping,    ["ping"], controller_api, [{module, "nodemonitor"}, {method, "ping"}]}
+ {ping,    ["ping"], controller_api, [{module, "nodemonitor"}, {method, "ping"}]},
+ {check,   ["check"], controller_api, [{module, "nodemonitor"}, {method, "check"}]}
 ].
